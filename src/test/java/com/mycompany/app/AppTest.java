@@ -39,7 +39,17 @@ public class AppTest
             fail("\"message\" is not \"Hello World!\"");
         }
     }
-
+    
+    @Test
+    public void testcouscous() {
+    	try {
+    		App truc = new App();
+            assertEquals(truc.getCouscous(), 5);
+        } catch (AssertionError e) {
+            fail("\"message\" is not \"Hello World!\"");
+        }
+    }
+    
     @After
     public void cleanUpStreams() {
         System.setOut(null);
