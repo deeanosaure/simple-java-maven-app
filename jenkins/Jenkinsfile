@@ -1,7 +1,12 @@
 pipeline {
-    agent { 'maven:3:5:2' }
+    agent { any }
     }
     stages {
+	stage('init') {
+            steps {
+                sh 'echo coucou'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
