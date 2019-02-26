@@ -5,7 +5,7 @@ package com.mycompany.app;
  */
 public class App
 {
-	public int couscous = 8;
+
     private final String message = "Hello World!";
 
     public App() {}
@@ -17,10 +17,6 @@ public class App
     private final String getMessage() {
         return message;
     }
-
-	public int getCouscous() {
-		return couscous;
-	}
 
 
 }
